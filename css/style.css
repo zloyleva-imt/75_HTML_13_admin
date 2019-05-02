@@ -1,0 +1,46 @@
+.admin-header {
+  background-color: #343a40;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px -1px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px -1px rgba(0, 0, 0, 0.19);
+}
+
+.content table thead tr th {
+  white-space: nowrap;
+}
+
+.admin-footer {
+  background-color: #343a40;
+  -webkit-box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.3), 0 -1px 3px 0 rgba(0, 0, 0, 0.2), 0 -2px 2px -1px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.3), 0 -1px 3px 0 rgba(0, 0, 0, 0.2), 0 -2px 2px -1px rgba(0, 0, 0, 0.19);
+  bottom: 0;
+  position: fixed;
+}
+
+.admin-footer .pagination {
+  margin: 0;
+}
+
+.admin-footer .pagination .page-item .page-link {
+  background-color: unset;
+  border: 1px solid #6c757d;
+  color: #ce3232;
+}
+
+.admin-footer .pagination .page-item .page-link:hover {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.admin-footer .pagination .page-item.disabled .page-link {
+  color: #6c757d;
+}
+
+.admin-footer .pagination .page-item.active .page-link {
+  color: #fff;
+  background-color: #ce3232;
+}
+
+body {
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */
