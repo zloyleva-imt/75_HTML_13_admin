@@ -40,6 +40,30 @@
   background-color: #ce3232;
 }
 
+table thead th.link-down {
+  cursor: pointer;
+  position: relative;
+}
+
+table thead th.link-down a.link-down-el {
+  text-decoration: unset;
+  color: #fff;
+}
+
+table thead th.link-down .drop-menu {
+  display: none;
+  position: absolute;
+  top: 86%;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(52, 58, 64, 0.75);
+}
+
+table thead th.link-down .drop-menu.open {
+  display: block;
+}
+
 body {
   height: 100vh;
 }

@@ -1,0 +1,24 @@
+table {
+  thead {
+    th.link-down {
+      cursor: pointer;
+      position: relative;
+      a.link-down-el {
+        text-decoration: unset;
+        color: $text-color;
+      }
+      .drop-menu {
+        display: none;
+        position: absolute;
+        top: 86%;
+        border: 1px solid $text-color;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: rgba(52, 58, 64, 0.75);
+        &.open{
+          display: block;
+        }
+      }
+    }
+  }
+}

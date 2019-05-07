@@ -42,73 +42,93 @@
     <div class="container my-3 content">
         <div class="row">
             <div class="col-12">
-                <h1 class="h3">Edit Mark Otto</h1>
+                <h1 class="h3">Order ID: 12</h1>
             </div>
             <div class="col-12">
-                <form>
-                    <fieldset disabled>
-                        <div class="form-group row">
-                            <label for="users_name" class="col-sm-2 col-form-label">Name</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="users_name" value="Mark Otto">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputEmail" value="mark@test.com">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputPhone" value="+380 099 1234567">
-                            </div>
-                        </div>
-                    </fieldset>
-
+                <fieldset disabled>
                     <div class="form-group row">
-                        <label for="selectRole" class="col-sm-2 col-form-label">Role</label>
+                        <label for="users_name" class="col-sm-2 col-form-label">Customer Name</label>
                         <div class="col-sm-10">
-                            <select id="selectRole" class="form-control">
-                                <option selected>User</option>
-                                <option>Manager</option>
-                                <option>Admin</option>
-                            </select>
+                            <input type="text" class="form-control" id="users_name" value="Mark Otto">
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="selectPriceType" class="col-sm-2 col-form-label">Price type</label>
+                        <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>
                         <div class="col-sm-10">
-                            <select id="selectPriceType" class="form-control">
-                                <option>User</option>
-                                <option>Opt</option>
-                                <option selected>Dealer</option>
-                                <option>Vip</option>
-                            </select>
+                            <input type="email" class="form-control" id="inputPhone" value="+380 099 1234567">
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="selectManager" class="col-sm-2 col-form-label">Manager</label>
+                        <label for="address" class="col-sm-2 col-form-label">Delivery address</label>
                         <div class="col-sm-10">
-                            <select id="selectManager" class="form-control">
-                                <option>Manager #1</option>
-                                <option>Manager #2</option>
-                                <option selected>Manager #3</option>
-                            </select>
+                            <input type="text" class="form-control" id="address" value="Kiev, Pobedy st., 56">
                         </div>
                     </div>
 
                     <div class="form-group row">
+                        <label for="comment" class="col-sm-2 col-form-label">Comment for order</label>
                         <div class="col-sm-10">
-                            <button type="submit" class="btn btn-outline-secondary">Edit</button>
+                            <textarea class="form-control" id="comment" rows="3">Can you make my order more cheaper than I see here?!</textarea>
                         </div>
                     </div>
-                </form>
+
+                    <div class="form-group row">
+                        <label for="total" class="col-sm-2 col-form-label">Total</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="total" value="592.20">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="date" class="col-sm-2 col-form-label">Order date</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="date" value="07-05-2019">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-12">
+                <h4>Order details</h4>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Computer i5 3.2G RAM 16Gb</td>
+                            <td>120.35</td>
+                            <td>2</td>
+                            <td>240.70</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>SSD 500Gb Patriot Preemium</td>
+                            <td>100.50</td>
+                            <td>3</td>
+                            <td>301.50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Keyboard Genius 114</td>
+                            <td>11.00</td>
+                            <td>5</td>
+                            <td>55.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="btn btn-outline-danger">Upload order to 1C</button>
+
             </div>
         </div>
     </div>
